@@ -1,0 +1,20 @@
+<html>
+<body>
+<script>
+function fun(){
+var arr=["delhi","colombo","beijing","paris","dhaka"];
+document.getElementById("out").value=arr[document.getElementById("inp").value];
+}
+</script>
+<select id="inp" onclick=fun()>
+<option value="" >--select--</option>
+<option value="0">india</option>
+<option value="1" >sri lanka</option>
+<option value="2" >china</option>
+<option value="3" >italy</option>
+<option value="4" >bangladesh</option>
+</select>
+<br><br>
+<input type="text" id="out"></input>
+</body>
+</html>

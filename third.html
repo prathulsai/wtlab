@@ -1,0 +1,15 @@
+<html>
+<body>
+<script>
+function fun(){
+var s=document.getElementById("inp").value;
+var k=s.split(" ");
+var a=s.split("\n");
+var str="No of charaters are "+s.length+"\nNo of words are "+k.length+"\nNo of lines are "+a.length;
+alert(str);
+}
+</script>
+<textarea cols="50" rows="5" id="inp"  placeholder="enter your text here"></textarea>
+<input type="submit" onclick=fun() ></input><br><br>
+</body>
+</html>

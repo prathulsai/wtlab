@@ -1,0 +1,26 @@
+<html>
+<body>
+<script>
+function fun1(){
+var s=document.getElementById("inp").value;
+var k=parseInt(s);
+var arr=["zero","one","two","three","four","five","six","seven","eight","nine"];
+if(k<=999&&k>=0)
+{
+var k1=k%10;
+var k2=parseInt(k/10)%10;
+var k3=parseInt(k/100);
+var msg=arr[k3]+" "+arr[k2]+" "+arr[k1];
+}
+else if(k<0||k>999)
+var msg="Integer is out of range";
+else
+var msg="Not a number";
+document.getElementById("out").value=msg;
+}
+</script>
+<input type="text" id="inp" placeholder="enter numbers"></input>
+<input type="submit" onclick=fun1()></input><br><br>
+<input type="text" id="out"></input>
+</body>
+</html>

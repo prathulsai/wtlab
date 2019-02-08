@@ -1,0 +1,22 @@
+<html>
+<head></head>
+<body>
+<script>
+function myfun(){
+var age=document.getElementById("age").value;
+var name=document.getElementById("name").value;
+if(parseInt(age)<18)
+var msg="Hello "+name+", you are not authorized to visit this site ";
+else
+var msg="Welcome "+name+" to this site";
+
+document.getElementById("demo").innerHTML=msg;
+}
+</script>
+<p id="demo">
+Name : <input id="name" type="text"></input>
+<br>Age &nbsp&nbsp&nbsp: <input id="age" type="text"></input><br>
+<input type="submit" onclick="myfun()"></input>
+</p>
+</body>
+</html>
