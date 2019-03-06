@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            function ValidateEmail()
+             { if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document .getElementById("email").value))
+  {
+  alert("You have entered an valid email address!");
+    return (true);
+  }
+    alert("You have entered an invalid email address!");
+    return (false);
+}
+        </script>
+        <input type="text" id="email">
+        <input type="submit" onclick="ValidateEmail()">
+    </body>
+</html>
