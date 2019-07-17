@@ -1,0 +1,27 @@
+<html>
+<body>
+<script>
+function fun(){
+var s=document.getElementById("inp").value;
+var w=s.split(" ");
+var k=[];
+var i=0,j=0,temp;
+for(i=0;i<w.length;i++){
+k[i]=parseInt(w[i]);
+}
+for(i=0;i<k.length;i++){
+for(j=i+1;j<k.length;j++){
+if(k[i]<k[j]){
+temp=k[i];
+k[i]=k[j];
+k[j]=temp;
+}
+}}
+document.getElementById("out").value=k;
+}
+</script>
+<input type="text" id="inp"placeholder="enter numbers"></input>
+<input type="submit" onclick=fun()></input><br><br>
+<input type="text" id="out"></input>
+</body>
+</html>

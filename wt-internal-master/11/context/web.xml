@@ -1,0 +1,18 @@
+<web-app ...>
+
+   <context-param>
+       <param-name>driverName</param-name>
+       <param-value>sun.jdbc.JdbcOdbcDriver</param-value>
+   </context-param>
+   
+   <servlet>
+      <servlet-name>hello</servlet-name>
+      <servlet-class>MyServlet</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+   </servlet-mapping> 
+     
+</web-app>
